@@ -1,0 +1,31 @@
+{
+  "name": "c4-drawio-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker for converting C4 PlantUML diagrams to draw.io format",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:prod": "wrangler deploy --env production",
+    "tail": "wrangler tail"
+  },
+  "dependencies": {
+    "@altbe/c4-puml-to-drawio": "github:altbe/c4-puml-to-drawio"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^3.99.0"
+  },
+  "keywords": [
+    "c4",
+    "plantuml",
+    "drawio",
+    "diagram",
+    "cloudflare",
+    "worker",
+    "architecture"
+  ],
+  "author": "altbe",
+  "license": "MIT"
+}
